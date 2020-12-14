@@ -43,7 +43,7 @@ function parseFullName(string){
         deletes temporary HTML element
 */
 function copyToClipboard(basic_info){
-    var tsv_row = basicInfo.first_name + '\t' +basicInfo.last_name + '\t' + basic_info.url;
+    var tsv_row = basic_info.first_name + '\t' +basic_info.last_name + '\t' + basic_info.url;
     var temp_text_elm = document.createElement('textarea');
     temp_text_elm.value = tsv_row;
     document.body.appendChild(temp_text_elm);
